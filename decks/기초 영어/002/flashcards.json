@@ -1,0 +1,57 @@
+[
+    {
+        "front": "Alors, comment ça se passe à l'université ? On est déjà à la moitié du semestre, tu te sens bien dans tes cours ?",
+        "back": "그래, 대학교는 어떻게 잘 다니고 있니? 벌써 학기 중반인데, 수업은 잘 따라가고 있어?",
+        "starred": false
+    },
+    {
+        "front": "Oui, ça va. Mais honnêtement, certains cours sont vraiment difficiles. Je commence à me demander si j'ai fait le bon choix de filière.",
+        "back": "응, 괜찮아. 하지만 솔직히, 몇몇 수업은 정말 어려워. 내가 전공을 잘 선택했는지 의문이 들기 시작했어.",
+        "starred": false
+    },
+    {
+        "front": "Tu as toujours été bonne élève. C'est normal que ce soit un peu plus difficile à ce niveau, mais tu t'en sortiras.",
+        "back": "너는 항상 공부를 잘해왔잖아. 이 정도 수준에서는 조금 더 어려운 게 당연하지만, 넌 잘 해낼 거야.",
+        "starred": false
+    },
+    {
+        "front": "Je sais, mais je me demande si je ne devrais pas changer de spécialité. Je ne me sens pas vraiment passionnée par ce que je fais.",
+        "back": "알아, 그런데 전공을 바꿔야 하나 고민 중이야. 내가 하는 일이 정말로 열정이 생기지 않는 것 같아서.",
+        "starred": false
+    },
+    {
+        "front": "Changer de spécialité maintenant ? Mais tu es déjà bien avancée. Ce serait dommage de tout recommencer.",
+        "back": "지금 전공을 바꾸겠다고? 하지만 이미 많이 진행됐잖아. 처음부터 다시 시작하는 건 아깝지 않겠니?",
+        "starred": false
+    },
+    {
+        "front": "Je sais, c'est pour ça que je suis perdue. Je ne veux pas gaspiller tout ce temps, mais en même temps, je ne veux pas continuer dans quelque chose qui ne me plaît pas.",
+        "back": "알아, 그래서 더 혼란스러워. 지금까지의 시간이 아깝기도 하지만, 그렇다고 흥미 없는 걸 계속하고 싶진 않아.",
+        "starred": false
+    },
+    {
+        "front": "Tu as pensé à en parler avec un conseiller d'orientation ? Ils pourraient t'aider à voir plus clair.",
+        "back": "진로 상담사와 상담해본 적 있니? 그들이 네가 상황을 좀 더 명확하게 볼 수 있도록 도와줄 수 있을 거야.",
+        "starred": false
+    },
+    {
+        "front": "Oui, j'y ai pensé. Peut",
+        "back": "être que ça pourrait m'aider à prendre une décision. Mais j'ai aussi peur de décevoir tout le monde si je change. - 응, 생각해본 적 있어. 아마도 그게 결정을 내리는 데 도움이 될 거야. 하지만 전공을 바꾸면 모두를 실망시킬까 봐 걱정돼.",
+        "starred": false
+    },
+    {
+        "front": "Tu sais, le plus important, c'est que tu sois heureuse et épanouie dans ce que tu fais. Peu importe le chemin que tu choisis, on sera toujours là pour te soutenir.",
+        "back": "제일 중요한 건 네가 행복하고 네가 하는 일에서 보람을 느끼는 거야. 어떤 길을 선택하든, 우리는 항상 너를 응원할 거야.",
+        "starred": false
+    },
+    {
+        "front": "Merci papa, ça me rassure de t'entendre dire ça. Je vais vraiment réfléchir à tout ça et peut",
+        "back": "être prendre rendez-vous avec un conseiller.\t- 고마워, 아빠. 아빠가 그렇게 말해주니 안심이 돼. 정말 잘 생각해보고, 상담사와 상담도 받아볼게.",
+        "starred": false
+    },
+    {
+        "front": "Fais",
+        "back": "le, et prends le temps qu'il te faut. L'important, c'est que tu fasses un choix qui te correspond. - 그래, 시간을 충분히 가져서 잘 생각해봐. 중요한 건 너에게 맞는 선택을 하는 거야.",
+        "starred": false
+    }
+]

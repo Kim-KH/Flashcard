@@ -1,0 +1,9 @@
+venv_py311/
+.buildozer/
+.buildozer_cache/
+*.pyc
+__pycache__/
+*.log
+*.backup
+tokens.txt
+tts.json

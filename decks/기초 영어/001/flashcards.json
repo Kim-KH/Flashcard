@@ -1,0 +1,92 @@
+[
+  {
+    "front": "Hi",
+    "back": "안녕",
+    "starred": false
+  },
+  {
+    "front": "good",
+    "back": "좋은",
+    "starred": false
+  },
+  {
+    "front": "impressed",
+    "back": "감동적인",
+    "starred": false
+  },
+  {
+    "front": "bad",
+    "back": "나쁜",
+    "starred": false
+  },
+  {
+    "front": "dangerous",
+    "back": "위험한",
+    "starred": false
+  },
+  {
+    "front": "happy",
+    "back": "행복한",
+    "starred": false
+  },
+  {
+    "front": "sad",
+    "back": "슬픈",
+    "starred": false
+  },
+  {
+    "front": "interested",
+    "back": "흥미로운",
+    "starred": false
+  },
+  {
+    "front": "bored",
+    "back": "지루한",
+    "starred": false
+  },
+  {
+    "front": "foolish",
+    "back": "바보같은",
+    "starred": false
+  },
+  {
+    "front": "slow",
+    "back": "느린",
+    "starred": false
+  },
+  {
+    "front": "hard",
+    "back": "어려운, 딱딱한",
+    "starred": false
+  },
+  {
+    "front": "easy",
+    "back": "쉬운",
+    "starred": false
+  },
+  {
+    "front": "alive",
+    "back": "살아있는",
+    "starred": false
+  },
+  {
+    "front": "safe",
+    "back": "안전한",
+    "starred": false
+  },
+  {
+    "front": "sored",
+    "back": "따끔거리는",
+    "starred": false
+  },
+  {
+    "front": "overestimated",
+    "back": "과대평가된",
+    "starred": false
+  },
+  {
+    "front": "again",
+    "back": "다시",
+    "starred": false
+  }
+]
