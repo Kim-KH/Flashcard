@@ -5,7 +5,7 @@ package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy,pillow,requests,gtts,pyjnius
+requirements = python3,kivy,pillow,requests,gtts,pyjnius,kivymd
 orientation = portrait
 osx.kivy_version = 2.2.1
 fullscreen = 0
@@ -20,6 +20,8 @@ p4a.branch = master
 android.accept_sdk_license = True
 android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
 android.skip_update = True
+android.sdk_build_tools_version = 33.0.0
+android.add_build_tools_to_path = True
 
 [buildozer]
 log_level = 2
