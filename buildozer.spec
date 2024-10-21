@@ -25,8 +25,8 @@ android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
 android.skip_update = False
 android.sdk_build_tools_version = 33.0.0
 
-android.sdk_path = /usr/local/lib/android/sdk
-android.ndk_path = /usr/local/lib/android/sdk/ndk-bundle
+# android.sdk_path = /usr/local/lib/android/sdk
+# android.ndk_path = /usr/local/lib/android/sdk/ndk-bundle
 android.sdkmanager_path = /home/buildozer/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager
 
 [buildozer]
