@@ -11,7 +11,7 @@ fullscreen = 0
 
 # Python and Kivy versions
 osx.kivy_version = 2.2.1
-python.version = 3.8
+python.version = 3.9
 
 # Android specific settings
 android.archs = arm64-v8a
@@ -24,7 +24,7 @@ android.add_dependencies = ffmpeg
 android.api = 33
 android.minapi = 21
 android.sdk = 33
-android.ndk = 27.1.12297006
+android.ndk = 25.2.9519653
 android.ndk_api = 21
 android.release_artifact = aab
 android.debug_artifact = apk
