@@ -43,14 +43,17 @@ jobs:
           path: ~/.buildozer
           key: ${{ runner.os }}-buildozer-${{ hashFiles('buildozer.spec') }}
           
+
       - name: Build with Buildozer
         run: |
-          sudo mkdir -p /github
-          sudo chown -R $USER:$USER /github
+          sudo mkdir -p /github/workspace/.buildozer
+          sudo chown -R $USER:$USER /github/workspace/.buildozer
           buildozer android debug
         env:
           BUILDOZER_WARN_ON_ROOT: 0
           JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
+          ANDROID_NDK_HOME: /usr/local/lib/android/sdk/ndk/27.1.12297006
+          ANDROID_HOME: /usr/local/lib/android/sdk
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
