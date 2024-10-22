@@ -42,9 +42,11 @@ jobs:
         with:
           path: ~/.buildozer
           key: ${{ runner.os }}-buildozer-${{ hashFiles('buildozer.spec') }}
-
+          
       - name: Build with Buildozer
         run: |
+          sudo mkdir -p /github
+          sudo chown -R $USER:$USER /github
           buildozer android debug
         env:
           BUILDOZER_WARN_ON_ROOT: 0
