@@ -1,0 +1,4 @@
+   kivy
+   kivymd
+   pyjnius==1.4.2
+   audiostream
