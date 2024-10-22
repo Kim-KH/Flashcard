@@ -37,6 +37,12 @@ android.sdk_path = /github/workspace/.buildozer/android/platform/android-sdk
 android.ndk_path = /github/workspace/.buildozer/android/platform/android-ndk-r25b
 android.sdkmanager_path = /home/buildozer/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager
 
+ios.kivy_ios_url = https://github.com/kivy/kivy-ios
+ios.kivy_ios_branch = master
+ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
+ios.ios_deploy_branch = 1.10.0
+ios.codesign.allowed = false
+
 [buildozer]
 log_level = 2
 warn_on_root = 1
