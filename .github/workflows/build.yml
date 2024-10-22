@@ -32,7 +32,7 @@ jobs:
           BUILDOZER_WARN_ON_ROOT: 0
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: package
           path: ${{ steps.buildozer.outputs.filename }}
