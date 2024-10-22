@@ -5,7 +5,7 @@ package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy,kivymd,pyjnius,audiostream,pillow,requests,gtts
+requirements = python3,kivy==2.2.1,kivymd,pyjnius,audiostream,pillow,requests,gtts
 orientation = portrait
 fullscreen = 0
 
@@ -38,7 +38,7 @@ p4a.branch = develop
 p4a.fork = kivy
 p4a.dist_name = pyjnius
 p4a.bootstrap = sdl2
-
+p4a.source_dir = /home/runner/.buildozer/android/platform/python-for-android
 # Build tools paths
 android.ant_path = /usr/share/ant
 android.sdk_path = /usr/local/lib/android/sdk
