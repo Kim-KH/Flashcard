@@ -21,6 +21,11 @@ jobs:
           pip install buildozer
           pip install cython==0.29.19
 
+      - name: Check DNS settings
+        run: |
+          cat /etc/resolv.conf
+          ping -c 4 archive.apache.org
+
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
