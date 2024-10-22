@@ -18,6 +18,7 @@ jobs:
       - name: Upgrade pip and install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install --upgrade setuptools wheel
           pip install --upgrade buildozer
           pip install --upgrade cython==0.29.19
 
@@ -27,25 +28,30 @@ jobs:
           sudo apt-get install -y git zip unzip openjdk-8-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
           sudo apt-get install -y libltdl-dev libffi-dev libssl-dev autoconf autotools-dev cmake
 
+      - name: Set up Apache Ant
+        run: |
+          wget https://downloads.apache.org/ant/binaries/apache-ant-1.10.12-bin.tar.gz
+          tar -xzf apache-ant-1.10.12-bin.tar.gz
+          echo "ANDROID_ANT_HOME=$HOME/apache-ant-1.10.12" >> $GITHUB_ENV
+          echo "$HOME/apache-ant-1.10.12/bin" >> $GITHUB_PATH
+
       - name: Cache Buildozer global directory
         uses: actions/cache@v2
         with:
-          path: .buildozer_global
-          key: ${{ runner.os }}-${{ hashFiles('buildozer.spec') }}
+          path: ~/.buildozer
+          key: ${{ runner.os }}-buildozer-${{ hashFiles('buildozer.spec') }}
 
       - name: Build with Buildozer
-        uses: ArtemSBulgakov/buildozer-action@v1
-        id: buildozer
-        with:
-          workdir: .
-          buildozer_version: stable
-          command: buildozer android debug
+        run: |
+          sudo mkdir -p /path
+          sudo chown -R $USER:$USER /path
+          buildozer android debug
         env:
           BUILDOZER_WARN_ON_ROOT: 0
-          BUILDOZER_GLOBAL_DIR: ${{ github.workspace }}/.buildozer_global
+          JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
           name: package
-          path: ${{ steps.buildozer.outputs.filename }}
+          path: bin/*.apk
