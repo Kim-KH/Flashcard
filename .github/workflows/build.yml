@@ -30,10 +30,10 @@ jobs:
 
       - name: Set up Apache Ant
         run: |
-          wget https://downloads.apache.org/ant/binaries/apache-ant-1.10.12-bin.tar.gz
-          tar -xzf apache-ant-1.10.12-bin.tar.gz
-          echo "ANDROID_ANT_HOME=$HOME/apache-ant-1.10.12" >> $GITHUB_ENV
-          echo "$HOME/apache-ant-1.10.12/bin" >> $GITHUB_PATH
+          wget https://dlcdn.apache.org/ant/binaries/apache-ant-1.10.14-bin.tar.gz
+          tar -xzf apache-ant-1.10.14-bin.tar.gz
+          echo "ANDROID_ANT_HOME=$HOME/apache-ant-1.10.14" >> $GITHUB_ENV
+          echo "$HOME/apache-ant-1.10.14/bin" >> $GITHUB_PATH
 
       - name: Cache Buildozer global directory
         uses: actions/cache@v2
