@@ -1,4 +1,7 @@
-   kivy
-   kivymd
-   pyjnius==1.4.2
-   audiostream
+kivy==2.2.1
+kivymd
+pyjnius
+audiostream
+pillow
+requests
+gtts
