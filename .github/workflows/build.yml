@@ -30,10 +30,12 @@ jobs:
 
       - name: Set up Apache Ant
         run: |
-          wget https://dlcdn.apache.org/ant/binaries/apache-ant-1.10.14-bin.tar.gz
-          tar -xzf apache-ant-1.10.14-bin.tar.gz
-          echo "ANDROID_ANT_HOME=$HOME/apache-ant-1.10.14" >> $GITHUB_ENV
-          echo "$HOME/apache-ant-1.10.14/bin" >> $GITHUB_PATH
+          sudo apt-get install -y ant
+          echo "ANDROID_ANT_HOME=/usr/share/ant" >> $GITHUB_ENV
+          echo "/usr/share/ant/bin" >> $GITHUB_PATH
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v2
 
       - name: Cache Buildozer global directory
         uses: actions/cache@v2
@@ -43,8 +45,8 @@ jobs:
 
       - name: Build with Buildozer
         run: |
-          sudo mkdir -p /path
-          sudo chown -R $USER:$USER /path
+          sudo mkdir -p /github
+          sudo chown -R $USER:$USER /github
           buildozer android debug
         env:
           BUILDOZER_WARN_ON_ROOT: 0
