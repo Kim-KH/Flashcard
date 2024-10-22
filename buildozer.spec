@@ -24,6 +24,9 @@ android.ndk = 25b
 android.ndk_api = 21
 p4a.branch = master
 p4a.fork = kivy
+p4a.dist_name = pyjnius
+p4a.bootstrap = sdl2
+
 android.release_artifact = aab
 android.debug_artifact = apk
 android.p4a_whitelist = lib-dynload/_ctypes.so
@@ -32,7 +35,7 @@ android.skip_update = False
 android.sdk_build_tools_version = 33.0.0
 pip_upgrade_command = python -m pip install --upgrade pip
 
-android.ant_path = /path/to/apache-ant-1.9.4
+android.ant_path = /home/runner/apache-ant-1.10.12
 android.sdk_path = /github/workspace/.buildozer/android/platform/android-sdk
 android.ndk_path = /github/workspace/.buildozer/android/platform/android-ndk-r25b
 android.sdkmanager_path = /home/buildozer/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager
