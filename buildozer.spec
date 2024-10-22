@@ -30,7 +30,9 @@ android.p4a_whitelist = lib-dynload/_ctypes.so
 android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,RECORD_AUDIO
 android.skip_update = False
 android.sdk_build_tools_version = 33.0.0
+pip_upgrade_command = python -m pip install --upgrade pip
 
+android.ant_path = /path/to/apache-ant-1.9.4
 android.sdk_path = /github/workspace/.buildozer/android/platform/android-sdk
 android.ndk_path = /github/workspace/.buildozer/android/platform/android-ndk-r25b
 android.sdkmanager_path = /home/buildozer/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager
