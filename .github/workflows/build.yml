@@ -21,26 +21,33 @@ jobs:
           pip install buildozer
           pip install cython==0.29.19
 
-      - name: Check DNS settings
+      - name: Cache Apache Ant
+        uses: actions/cache@v2
+        id: cache-ant
+        with:
+          path: apache-ant-1.9.4
+          key: ${{ runner.os }}-ant-1.9.4
+
+      - name: Download Apache Ant
+        if: steps.cache-ant.outputs.cache-hit != 'true'
         run: |
-          cat /etc/resolv.conf
-          ping -c 4 archive.apache.org
+          wget https://downloads.apache.org/ant/binaries/apache-ant-1.9.4-bin.tar.gz || \
+          wget https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.4-bin.tar.gz || \
+          wget https://www-eu.apache.org/dist/ant/binaries/apache-ant-1.9.4-bin.tar.gz
+          tar -xzf apache-ant-1.9.4-bin.tar.gz
+
+      - name: Set Apache Ant path
+        run: echo "ANDROID_ANT_HOME=$PWD/apache-ant-1.9.4" >> $GITHUB_ENV
+
+      - name: Network Diagnostics
+        run: |
+          nslookup archive.apache.org
+          traceroute archive.apache.org
+          curl -v https://archive.apache.org
 
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
-        with:
-          workdir: .
-          buildozer_version: stable
-          command: buildozer android debug
-        env:
-          BUILDOZER_WARN_ON_ROOT: 0
-        # 재시도 메커니즘 추가
-        continue-on-error: true
-
-      - name: Retry Build on Failure
-        if: steps.buildozer.outcome == 'failure'
-        uses: ArtemSBulgakov/buildozer-action@v1
         with:
           workdir: .
           buildozer_version: stable
