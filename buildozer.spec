@@ -35,7 +35,7 @@ android.skip_update = False
 android.sdk_build_tools_version = 33.0.0
 pip_upgrade_command = python -m pip install --upgrade pip
 
-android.ant_path = /home/runner/apache-ant-1.10.14
+android.ant_path = /usr/share/ant
 android.sdk_path = /github/workspace/.buildozer/android/platform/android-sdk
 android.ndk_path = /github/workspace/.buildozer/android/platform/android-ndk-r25b
 android.sdkmanager_path = /home/buildozer/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager
