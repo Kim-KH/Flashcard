@@ -5,7 +5,7 @@ package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy,kivymd,pyjnius==1.4.2,audiostream,pillow,requests,gtts
+requirements = python3,kivy,kivymd,pyjnius,audiostream,pillow,requests,gtts
 orientation = portrait
 fullscreen = 0
 
@@ -24,7 +24,7 @@ android.add_dependencies = ffmpeg
 android.api = 33
 android.minapi = 21
 android.sdk = 33
-android.ndk = 25b
+android.ndk = 27.1.12297006
 android.ndk_api = 21
 android.release_artifact = aab
 android.debug_artifact = apk
@@ -41,8 +41,8 @@ p4a.bootstrap = sdl2
 
 # Build tools paths
 android.ant_path = /usr/share/ant
-android.sdk_path = /github/workspace/.buildozer/android/platform/android-sdk
-android.ndk_path = /github/workspace/.buildozer/android/platform/android-ndk-r25b
+android.sdk_path = /usr/local/lib/android/sdk
+android.ndk_path = /usr/local/lib/android/sdk/ndk/27.1.12297006
 android.sdkmanager_path = /home/buildozer/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager
 
 # iOS specific settings
