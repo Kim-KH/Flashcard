@@ -5,7 +5,7 @@ package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy,kivymd,pyjnius,audiostream
+requirements = python3,kivy,kivymd,pyjnius==1.4.2,audiostream
 orientation = portrait
 osx.kivy_version = 2.2.1
 python.version = 3.8
@@ -22,7 +22,7 @@ android.minapi = 21
 android.sdk = 33
 android.ndk = 25b
 android.ndk_api = 21
-p4a.branch = master
+p4a.branch = develop
 p4a.fork = kivy
 p4a.dist_name = pyjnius
 p4a.bootstrap = sdl2
