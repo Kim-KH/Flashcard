@@ -22,12 +22,15 @@ android.ndk = 25b
 android.ndk_api = 21
 p4a.branch = master
 p4a.fork = kivy
+android.release_artifact = aab
+android.debug_artifact = apk
+android.p4a_whitelist = lib-dynload/_ctypes.so
 android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
 android.skip_update = False
 android.sdk_build_tools_version = 33.0.0
 
-# android.sdk_path = /usr/local/lib/android/sdk
-# android.ndk_path = /usr/local/lib/android/sdk/ndk-bundle
+android.sdk_path = /github/workspace/.buildozer/android/platform/android-sdk
+android.ndk_path = /github/workspace/.buildozer/android/platform/android-ndk-r25b
 android.sdkmanager_path = /home/buildozer/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager
 
 [buildozer]
