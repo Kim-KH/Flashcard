@@ -33,7 +33,7 @@ android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,RECO
 android.skip_update = False
 android.sdk_build_tools_version = 33.0.0
 
-# Python-for-Android settings
+android.java_version = 11
 p4a.branch = develop
 p4a.fork = kivy
 p4a.dist_name = pyjnius
