@@ -20,6 +20,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install buildozer
           pip install cython==0.29.19
+          sudo apt-get update
+          sudo apt-get install -y traceroute
 
       - name: Cache Apache Ant
         uses: actions/cache@v2
@@ -31,9 +33,9 @@ jobs:
       - name: Download Apache Ant
         if: steps.cache-ant.outputs.cache-hit != 'true'
         run: |
-          wget https://downloads.apache.org/ant/binaries/apache-ant-1.9.4-bin.tar.gz || \
-          wget https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.4-bin.tar.gz || \
-          wget https://www-eu.apache.org/dist/ant/binaries/apache-ant-1.9.4-bin.tar.gz
+          wget --tries=3 --timeout=15 https://downloads.apache.org/ant/binaries/apache-ant-1.9.4-bin.tar.gz || \
+          wget --tries=3 --timeout=15 https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.4-bin.tar.gz || \
+          wget --tries=3 --timeout=15 https://www-eu.apache.org/dist/ant/binaries/apache-ant-1.9.4-bin.tar.gz
           tar -xzf apache-ant-1.9.4-bin.tar.gz
 
       - name: Set Apache Ant path
@@ -43,7 +45,7 @@ jobs:
         run: |
           nslookup archive.apache.org
           traceroute archive.apache.org
-          curl -v https://archive.apache.org
+          curl -v --max-time 30 https://archive.apache.org
 
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
