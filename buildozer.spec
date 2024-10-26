@@ -34,6 +34,8 @@ android.skip_update = False
 android.sdk_build_tools_version = 33.0.0
 garden_requirements =
 buildozer.enable_cache = False
+android.gradle_args = --stacktrace --debug
+android.gradle_version = 7.2
 
 android.java_version = 11
 p4a.branch = master
@@ -46,6 +48,9 @@ p4a.source_dir = /home/runner/work/Flashcard/Flashcard/python-for-android
 #android.sdk_path = /usr/local/lib/android/sdk
 #android.ndk_path = /usr/local/lib/android/sdk/ndk/27.1.12297006
 android.sdkmanager_path = /home/buildozer/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager
+android.gradle_dependencies = androidx.webkit:webkit:1.4.0
+android.add_gradle_repositories = maven { url 'https://maven.google.com' }
+android.extra_gradle_args = -Pandroid.useAndroidX=true -Pandroid.enableJetifier=true
 
 # iOS specific settings
 ios.kivy_ios_url = https://github.com/kivy/kivy-ios
