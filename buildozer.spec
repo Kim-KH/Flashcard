@@ -38,7 +38,7 @@ p4a.branch = master
 p4a.fork = kivy
 p4a.dist_name = pyjnius
 p4a.bootstrap = sdl2
-# p4a.source_dir = /home/runner/.buildozer/android/platform/python-for-android 
+p4a.source_dir = /home/runner/work/Flashcard/Flashcard/python-for-android
 # Build tools paths
 #android.ant_path = /usr/share/ant
 #android.sdk_path = /usr/local/lib/android/sdk
