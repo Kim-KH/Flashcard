@@ -19,10 +19,7 @@ jobs:
     - name: Install Buildozer
       run: |
         python -m pip install --upgrade pip
-        pip install buildozer
-    
-    - name: Clean Buildozer
-      run: buildozer android clean
+        pip install buildozer Cython==0.29.33
       
     - name: Set up JDK 11
       uses: actions/setup-java@v3
@@ -44,11 +41,10 @@ jobs:
         pip install virtualenv==20.24.5
         pip install -r requirements.txt
         
-    - name: Setup python-for-android
+    - name: Set up Python-for-Android
       run: |
-        mkdir -p /home/runner/.buildozer/android/platform
-        git clone https://github.com/kivy/python-for-android.git /home/runner/.buildozer/android/platform/python-for-android
-        cd /home/runner/.buildozer/android/platform/python-for-android
+        git clone https://github.com/kivy/python-for-android.git
+        cd python-for-android
         python setup.py install
 
     - name: Setup Android SDK
@@ -93,6 +89,7 @@ jobs:
         sudo mkdir -p /home/runner/.buildozer
         sudo chown -R $USER:$USER /home/runner/.buildozer
         export PATH=$PATH:/home/runner/.local/bin
+        buildozer android clean
         buildozer android debug
       env:
         BUILDOZER_WARN_ON_ROOT: 0
