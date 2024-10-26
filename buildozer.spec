@@ -5,7 +5,7 @@ package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy==2.2.1,kivymd,pyjnius,kivy_garden.core,pillow,requests,gtts
+requirements = python3,kivy==2.2.1,kivymd,pyjnius,pillow,requests,gtts,kivy_garden.graph
 orientation = portrait
 fullscreen = 0
 
