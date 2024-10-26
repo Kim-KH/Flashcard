@@ -100,7 +100,6 @@ jobs:
         sudo mkdir -p /home/runner/.buildozer
         sudo chown -R $USER:$USER /home/runner/.buildozer
         export PATH=$PATH:~/.local/bin
-        buildozer init
         buildozer android clean
         buildozer android debug
       env:
