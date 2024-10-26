@@ -8,8 +8,8 @@ version = 0.1
 requirements = python3,kivy==2.2.1,kivymd,pyjnius,pillow,requests,gtts,kivy_garden.graph
 orientation = portrait
 fullscreen = 0
-
-# Python and Kivy versions
+android.gradle_dependencies = androidx.webkit:webkit:1.4.0
+android.gradle_version = 7.2
 osx.kivy_version = 2.2.1
 python.version = 3.9
 
