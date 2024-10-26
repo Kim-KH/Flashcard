@@ -27,9 +27,15 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential libstdc++6 zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev libbz2-dev openjdk-11-jdk
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools wheel
+        python -m pip install --upgrade pip
         pip install Cython==0.29.33
         pip install buildozer==1.5.0
         pip install kivy[audio]==2.2.1
@@ -88,7 +94,7 @@ jobs:
       run: |
         sudo mkdir -p /home/runner/.buildozer
         sudo chown -R $USER:$USER /home/runner/.buildozer
-        export PATH=$PATH:/home/runner/.local/bin
+        export PATH=$PATH:~/.local/bin
         buildozer android clean
         buildozer android debug
       env:
@@ -96,7 +102,7 @@ jobs:
         JAVA_HOME: ${{ env.JAVA_HOME_11_X64 }}
         ANDROID_HOME: /usr/local/lib/android/sdk
         ANDROID_NDK_HOME: ${{ env.ANDROID_NDK_HOME }}
-        
+        P4A_HOME: /home/runner/work/Flashcard/Flashcard/python-for-android   
      
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
