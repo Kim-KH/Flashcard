@@ -33,7 +33,6 @@ android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,RECO
 android.skip_update = False
 android.sdk_build_tools_version = 33.0.0
 garden_requirements =
-buildozer.enable_cache = False
 android.gradle_args = --stacktrace --debug
 
 android.java_version = 11
@@ -47,7 +46,6 @@ p4a.source_dir = /home/runner/work/Flashcard/Flashcard/python-for-android
 #android.sdk_path = /usr/local/lib/android/sdk
 #android.ndk_path = /usr/local/lib/android/sdk/ndk/27.1.12297006
 android.sdkmanager_path = /home/buildozer/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager
-android.gradle_dependencies = androidx.webkit:webkit:1.4.0
 android.add_gradle_repositories = maven { url 'https://maven.google.com' }
 android.extra_gradle_args = -Pandroid.useAndroidX=true -Pandroid.enableJetifier=true
 
@@ -65,5 +63,4 @@ pip_upgrade_command = python -m pip install --upgrade pip
 log_level = 2
 warn_on_root = 1
 buildozer_dir = ./.buildozer
-p4a.source_dir = /home/runner/.buildozer/android/platform/python-for-android
 buildozer.enable_cache = False
