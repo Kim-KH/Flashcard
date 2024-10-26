@@ -5,7 +5,7 @@ package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy==2.2.1,kivymd,pyjnius,audiostream,pillow,requests,gtts
+requirements = python3,kivy==2.2.1,kivymd,pyjnius,kivy_garden.core,pillow,requests,gtts
 orientation = portrait
 fullscreen = 0
 
@@ -21,9 +21,9 @@ android.private_storage = True
 android.accept_sdk_license = True
 android.enable_androidx = True
 android.add_dependencies = ffmpeg
-android.api = 30
+android.api = 29
 android.minapi = 21
-android.sdk = 33
+android.sdk = 29
 android.ndk = 25b
 android.ndk_api = 21
 android.release_artifact = aab
@@ -34,7 +34,7 @@ android.skip_update = False
 android.sdk_build_tools_version = 33.0.0
 
 android.java_version = 11
-p4a.branch = develop
+p4a.branch = master
 p4a.fork = kivy
 p4a.dist_name = pyjnius
 p4a.bootstrap = sdl2
@@ -60,3 +60,4 @@ log_level = 2
 warn_on_root = 1
 buildozer_dir = ./.buildozer
 p4a.source_dir = /home/runner/.buildozer/android/platform/python-for-android
+buildozer.enable_cache = False
