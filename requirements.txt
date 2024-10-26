@@ -1,7 +1,6 @@
 kivy==2.2.1
 kivymd
 pyjnius
-audiostream
 pillow
 requests
 gtts
