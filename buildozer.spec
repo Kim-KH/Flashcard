@@ -23,7 +23,7 @@ android.enable_androidx = True
 android.add_dependencies = ffmpeg
 android.api = 30
 android.minapi = 21
-android.sdk = 31
+# android.sdk = 31
 android.ndk = 25b
 android.ndk_api = 21
 android.release_artifact = aab
@@ -38,7 +38,7 @@ p4a.branch = master
 p4a.fork = kivy
 p4a.dist_name = pyjnius
 p4a.bootstrap = sdl2
-p4a.source_dir = /home/runner/.buildozer/android/platform/python-for-android 
+# p4a.source_dir = /home/runner/.buildozer/android/platform/python-for-android 
 # Build tools paths
 #android.ant_path = /usr/share/ant
 #android.sdk_path = /usr/local/lib/android/sdk
