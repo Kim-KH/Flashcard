@@ -5,6 +5,7 @@ jobs:
   build-android:
     name: Build for Android
     runs-on: ubuntu-latest
+    timeout-minutes: 45  # 여기에 timeout-minutes를 추가합니다
 
     steps:
     - name: Checkout
@@ -33,6 +34,7 @@ jobs:
         pip install requests==2.31.0
         pip install gtts==2.3.2
         pip install virtualenv==20.24.5
+        pip install -r requirements.txt
         
     - name: Setup python-for-android
       run: |
