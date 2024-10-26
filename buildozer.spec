@@ -35,7 +35,6 @@ android.sdk_build_tools_version = 33.0.0
 garden_requirements =
 buildozer.enable_cache = False
 android.gradle_args = --stacktrace --debug
-android.gradle_version = 7.2
 
 android.java_version = 11
 p4a.branch = master
