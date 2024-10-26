@@ -32,6 +32,8 @@ android.whitelist = lib-dynload/_ctypes.so
 android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,RECORD_AUDIO
 android.skip_update = False
 android.sdk_build_tools_version = 33.0.0
+garden_requirements =
+buildozer.enable_cache = False
 
 android.java_version = 11
 p4a.branch = master
