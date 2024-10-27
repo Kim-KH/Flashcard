@@ -9,7 +9,7 @@ requirements = python3,kivy==2.2.1,kivymd,pyjnius,pillow,requests,gtts,kivy_gard
 orientation = portrait
 fullscreen = 0
 android.gradle_dependencies = androidx.webkit:webkit:1.4.0
-android.gradle_version = 7.2
+android.gradle_version = 8.0.2
 osx.kivy_version = 2.2.1
 python.version = 3.9
 
@@ -20,8 +20,9 @@ android.add_build_tools_to_path = True
 android.private_storage = True
 android.accept_sdk_license = True
 android.enable_androidx = True
+android.gradle_use_latest = True
 android.add_dependencies = ffmpeg
-android.api = 30
+android.api = 33
 android.minapi = 21
 # android.sdk = 31
 android.ndk = 25b
