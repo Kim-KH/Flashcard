@@ -20,7 +20,21 @@ from kivy.uix.popup import Popup
 from kivy.properties import NumericProperty
 from kivy.properties import StringProperty
 from kivy.metrics import dp
+
 import threading 
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+import traceback
+import sys
+
+def custom_excepthook(exc_type, exc_value, exc_traceback):
+    print("An uncaught exception occurred:")
+    print("Type:", exc_type)
+    print("Value:", exc_value)
+    traceback.print_tb(exc_traceback)
+
+sys.excepthook = custom_excepthook
 
 from gtts import gTTS
 import tempfile
