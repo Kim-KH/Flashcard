@@ -1,6 +1,6 @@
 [app]
 title = Flashcard App
-package.name = flashcardapp
+package.name = org.test.flashcardapp
 package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
