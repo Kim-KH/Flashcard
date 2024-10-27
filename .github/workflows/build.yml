@@ -116,9 +116,15 @@ jobs:
         ANDROID_NDK_HOME: ${{ env.ANDROID_NDK_HOME }}
         P4A_HOME: /home/runner/work/Flashcard/Flashcard/python-for-android   
         JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+
+    - name: List contents of bin directory
+      run: ls -R bin/
      
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
         name: package
         path: bin/*.apk
+        if-no-files-found: error
+
+
