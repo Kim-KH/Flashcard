@@ -12,6 +12,8 @@ android.gradle_dependencies = androidx.webkit:webkit:1.4.0
 android.gradle_version = 8.0.2
 osx.kivy_version = 2.2.1
 python.version = 3.9
+android.add_libs = libmagtsync.so
+android.opengl_version = 2.0
 
 # Android specific settings
 android.archs = arm64-v8a
