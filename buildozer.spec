@@ -5,7 +5,7 @@ package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy==2.2.1,kivymd,pyjnius,pillow,requests,gtts,kivy_garden.graph
+requirements = python3,kivy==2.2.1,kivymd,pyjnius,pillow,requests,plyer,kivy_garden.graph
 orientation = portrait
 fullscreen = 0
 android.gradle_dependencies = androidx.webkit:webkit:1.4.0
